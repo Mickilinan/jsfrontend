@@ -1,5 +1,5 @@
 import React from 'react'
-import img_logotype from '../assets/images/logotype.svg'
+import img_logotype from '../../assets/images/logotype.svg'
 
 const home = () => {
   return (
