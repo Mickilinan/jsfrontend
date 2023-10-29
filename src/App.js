@@ -16,7 +16,7 @@ import WhyChooseUs from './components/Home/WhyChooseUs';
 
 function App() {
   return (
-    <div className= "wrapper-grid">
+    <>
   <Header />
   < ShowCase />
   < Clients />
@@ -30,7 +30,7 @@ function App() {
   < ArticleAndNews />
   < NewsLetter />
   < Footer />
-  </div>
+  </>
   );
 }
 

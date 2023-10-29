@@ -12,7 +12,7 @@ const Services = () => {
     <img className="bglinesright" src={img_bglinesright}alt="white lines" />
 
     <div className="container">
-        < SectionTitle title="Our Services" description="We Provide The Best  Consulting Services" />
+        < SectionTitle title="Our Services" description="We Provide The Best Consulting Services" />
 
         <div className="grid-container">
 

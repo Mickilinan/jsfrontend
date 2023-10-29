@@ -1,6 +1,9 @@
 import React from 'react'
 import img_bg from '../../assets/images/BG.svg'
 import img_chooseus from '../../assets/images/chooseus.png'
+import SectionTitle from '../Generics/SectionTitle'
+import WhyUsBox from '../Generics/WhyUsBox'
+
 
 const WhyChooseUs = () => {
   return (
@@ -8,49 +11,11 @@ const WhyChooseUs = () => {
 
 
     <div className="container">
-        <div className="section-title">
-            <p>Why Choose Us</p>
-            <h2>Why We Are The <br />
-                Best Business <br />
-                Consulting Agency</h2>
-        </div>
-
-        <a className="choose-us" href="#">
-            <div className="ichoose"><i className="fa-regular fa-thumbs-up"></i></div>
-            <div>
-                <h3>Process Excellence</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur.</p>
-            </div>
-
-        </a>
-
-        <a className="choose-us" href="#">
-            <div className="ichoose"><i className="fa-solid fa-list-check"></i></div>
-            <div>
-                <h3>Strategic Planning</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur.</p>
-            </div>
-
-        </a>
-
-        <a className="choose-us" href="#">
-            <div className="ichoose"><i className="fa-light fa-pen-fancy"></i></div>
-            <div>
-                <h3>Experience Design</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur.</p>
-            </div>
-
-        </a>
-
-        <a className="choose-us" href="#">
-            <div className="ichoose"><i className="fa-solid fa-user-astronaut"></i></div>
-            <div>
-                <h3>Artificial Intelligence</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur.</p>
-            </div>
-
-        </a>
-
+       < SectionTitle title="Why Choose Us" description="Why We Are The Best Business Consulting Agency"/>
+        <WhyUsBox url="/process" icon="fa-regular fa-thumbs-up" title="Process Excellence" description="Lorem, ipsum dolor sit amet consectetur."/>
+        <WhyUsBox url="/planning" icon="fa-solid fa-list-check" title="Strategic Planning" description="Lorem, ipsum dolor sit amet consectetur."/>
+        <WhyUsBox url="/design" icon="fa-light fa-pen-fancy" title="Experience Design" description="Lorem, ipsum dolor sit amet consectetur."/>
+        <WhyUsBox url="/ai" icon="fa-solid fa-user-astronaut" title="Artificial Intelligence" description="Lorem, ipsum dolor sit amet consectetur."/>
 
 
     </div>

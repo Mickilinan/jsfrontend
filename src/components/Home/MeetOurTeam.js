@@ -5,6 +5,7 @@ import img_kimberly from '../../assets/images/kimberly.png'
 import img_justin from '../../assets/images/justin.png'
 import img_dots from '../../assets/images/dot.svg'
 import Buttons from '../Generics/Buttons'
+import SectionTitle from '../Generics/SectionTitle'
 
 const MeetOurTeam = () => {
   return (
@@ -12,11 +13,7 @@ const MeetOurTeam = () => {
     <div className="container">
 
         <div className="grid-container">
-            <div className="section-title">
-                <p>Meet Our Team</p>
-                <h2>Experience Team Members</h2>
-            </div>
-
+           < SectionTitle title="Meet Our Team" description="Experience Team Members"/>
             < Buttons type="" title="Browse Team" url="/team"/>
         
         </div>

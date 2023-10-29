@@ -1,5 +1,7 @@
 import React from 'react'
 import Buttons from '../Generics/Buttons'
+import SectionTitle from '../Generics/SectionTitle'
+import FeaturesBox from '../Generics/FeaturesBox'
 
 
 const Featuers = () => {
@@ -8,11 +10,7 @@ const Featuers = () => {
 
     <div className="section-title">
 
-        <p>Features</p>
-        <h2>Our Accounting is<br />
-            trusted by thousand<br />
-            of companies</h2>
-
+        <SectionTitle title="Features" description="Our Accounting is trusted by thousand of companies" />
         < Buttons type="yellow" title="Learn more" url="/learnmore"/>
 
     </div>
@@ -20,33 +18,26 @@ const Featuers = () => {
     <div className="advice">
         <div className="container">
 
-            <a className="advices" href="#">
-                <i className="fa-regular fa-handshake"></i>
-                <h3>Business Advice</h3>
-                <p>Lorem ipsum, dolor sit amet<br />
-                    consectetur adipisicing elit.</p>
-            </a>
+            < FeaturesBox url="/businessadvice" 
+            title="Business Advice" 
+            description="Lorem ipsum, dolor sit amet consectetur adipisicing elit."
+             icon="fa-regular fa-handshake" />
 
-            <a className="advices" href="#">
-                <i className="fa-regular fa-lightbulb"></i>
-                <h3>Startup Business</h3>
-                <p>Lorem ipsum, dolor sit amet<br />
-                    consectetur adipisicing elit.</p>
-            </a>
+< FeaturesBox url="/businessadvice" 
+            title="Business Advice" 
+            description="Lorem ipsum, dolor sit amet consectetur adipisicing elit."
+             icon="fa-regular fa-lightbulb" />
 
-            <a className="advices" href="#">
-                <i className="fa-solid fa-chart-line"></i>
-                <h3>Financial Advice</h3>
-                <p>Lorem ipsum, dolor sit amet<br />
-                    consectetur adipisicing elit.</p>
-            </a>
+< FeaturesBox url="/businessadvice" 
+            title="Business Advice" 
+            description="Lorem ipsum, dolor sit amet consectetur adipisicing elit."
+             icon="fa-solid fa-chart-line" />
 
-            <a className="advices" href="#">
-                <i className="fa-solid fa-toolbox"></i>
-                <h3>Risk Management </h3>
-                <p>Lorem ipsum, dolor sit amet<br />
-                    consectetur adipisicing elit.</p>
-            </a>
+< FeaturesBox url="/businessadvice" 
+            title="Business Advice" 
+            description="Lorem ipsum, dolor sit amet consectetur adipisicing elit."
+             icon="fa-solid fa-toolbox" />
+
 
 
         </div>

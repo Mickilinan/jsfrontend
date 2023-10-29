@@ -4,15 +4,15 @@ import img_art2 from '../../assets/images/article-Image-2.png'
 import img_art3 from '../../assets/images/article-Image-3.png'
 import img_art4 from '../../assets/images/article-Image-4.png'
 import Buttons from '../Generics/Buttons'
+import SectionTitle from '../Generics/SectionTitle'
 
 const ProjectAndCase = () => {
   return (
     <section class="project-and-case">
     <div class="container">
 
-        <div class="section-title">
-            <p>Project & Case Studies</p>
-            <h2>Let's Looks Our Global Projects</h2>
+       < SectionTitle title="Project & Case Studies" description="Let's Looks our Global Projects"/>
+
         </div>
 
         <div class="project-and-cases">
@@ -40,7 +40,7 @@ const ProjectAndCase = () => {
         <div class="center-content">
             < Buttons type="black" title="All Recent Projects" url="/projects"/>
         </div>
-    </div>
+    
 </section>
   )
 }

@@ -4,17 +4,14 @@ import img_cassandra from '../../assets/images/cassandra.svg'
 import img_amanda from '../../assets/images/amanda.svg'
 import img_jack from '../../assets/images/jack.svg'
 import Buttons from '../Generics/Buttons'
+import SectionTitle from '../Generics/SectionTitle'
 
 const WhatOurClientSays = () => {
   return (
     
     <section className="testimonial">
         <div className="container">
-            <div className="section-title">
-                <p>Testimonial</p>
-                <h2>What Our Client Says</h2>
-
-            </div>
+           < SectionTitle title="Testimonial" description="What Our Client Says" />
             <div className="client-says">
                 <div id="cassandra">
                     <img src={img_star} alt="five stars review" />

@@ -4,16 +4,14 @@ import img_17mar from '../../assets/images/17mar.png'
 import img_13mar from '../../assets/images/13mar.png'
 import img_dot2 from '../../assets/images/dot2.svg'
 import Buttons from '../Generics/Buttons'
+import SectionTitle from '../Generics/SectionTitle'
 
 const ArticleAndNews = () => {
   return (
     <section className="article-news">
     <div className="container">
         <div className="grid-container">
-            <div className="section-title">
-                <p>Article & News</p>
-                <h2>Get Every Single Articles & News</h2>
-            </div>
+           < SectionTitle title="Article & News" description="Get Every Single Articles & News" />
             < Buttons type="" title="Browse Articles" url="/articles" />
             
         </div>
