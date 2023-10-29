@@ -3,6 +3,7 @@ import img_25mar from '../../assets/images/25mar.png'
 import img_17mar from '../../assets/images/17mar.png'
 import img_13mar from '../../assets/images/13mar.png'
 import img_dot2 from '../../assets/images/dot2.svg'
+import Buttons from '../Generics/Buttons'
 
 const ArticleAndNews = () => {
   return (
@@ -13,7 +14,7 @@ const ArticleAndNews = () => {
                 <p>Article & News</p>
                 <h2>Get Every Single Articles & News</h2>
             </div>
-            <a className="btn-transparent" href="browsearticles.html">Browse Articles <i className="fa-regular fa-arrow-up-right"></i></a>
+            < Buttons type="" title="Browse Articles" url="/articles" />
             
         </div>
 

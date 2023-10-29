@@ -1,6 +1,8 @@
 import React from 'react'
 import img_rectangle1 from '../../assets/images/Rectangle1.svg'
 import img_showcase from '../../assets/images/showcase-image.svg'
+import Buttons from '../Generics/Buttons'
+
 
 const ShowCase = () => {
   return (
@@ -12,7 +14,7 @@ const ShowCase = () => {
         <div className="content">
             <h1>We Provide The Best Business Solutions</h1>
             <p>Establish your vision and value proposition and turn them into testable prototypes.</p>
-            <a className="btn-yellow" href="consulting.html">Get Consulting <i className="fa-regular fa-arrow-up-right"></i></a>
+            < Buttons type="yellow" title="Get consulting" url="/consulting" />
             <a className="btn-transparent" href="services.html">Learn More <i className="fa-regular fa-arrow-up-right"></i></a>
         </div>
 

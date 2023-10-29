@@ -3,6 +3,7 @@ import img_star from '../../assets/images/Star.svg'
 import img_cassandra from '../../assets/images/cassandra.svg'
 import img_amanda from '../../assets/images/amanda.svg'
 import img_jack from '../../assets/images/jack.svg'
+import Buttons from '../Generics/Buttons'
 
 const WhatOurClientSays = () => {
   return (
@@ -60,7 +61,7 @@ const WhatOurClientSays = () => {
             </div>
 
             <div className="center-content">
-                <a className="btn-black" href="projects.html">All Reviews <i className="fa-regular fa-arrow-up-right"></i></a>
+                < Buttons type="black" title="All Reviews" url="/reviews" />
             </div>
         </div>
     </section>

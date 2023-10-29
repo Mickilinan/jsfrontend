@@ -4,6 +4,7 @@ import img_mark from '../../assets/images/mark.png'
 import img_kimberly from '../../assets/images/kimberly.png'
 import img_justin from '../../assets/images/justin.png'
 import img_dots from '../../assets/images/dot.svg'
+import Buttons from '../Generics/Buttons'
 
 const MeetOurTeam = () => {
   return (
@@ -16,7 +17,7 @@ const MeetOurTeam = () => {
                 <h2>Experience Team Members</h2>
             </div>
 
-            <a className="btn-transparent" href="browseteam.html">Browse Team <i className="fa-regular fa-arrow-up-right"></i></a>
+            < Buttons type="" title="Browse Team" url="/team"/>
         
         </div>
 

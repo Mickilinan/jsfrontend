@@ -1,5 +1,7 @@
 import React from 'react'
 import img_logotype from '../../assets/images/logotype.svg'
+import Buttons from '../Generics/Buttons'
+
 
 const home = () => {
   return (
@@ -41,8 +43,7 @@ const home = () => {
                     <a href="contacts.html">Contact</a>
                 </nav>
 
-                <a className="btn-yellow btn-login" href="login.html">Login <i
-                        className="fa-regular fa-arrow-up-right"></i></a>
+                < Buttons type="yellow" title="Login" url="/login" />
             </div>
 
 

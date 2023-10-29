@@ -1,4 +1,6 @@
 import React from 'react'
+import Buttons from '../Generics/Buttons'
+
 
 const Featuers = () => {
   return (
@@ -11,7 +13,7 @@ const Featuers = () => {
             trusted by thousand<br />
             of companies</h2>
 
-        <a className="btn-yellow" href="learnmore.html">Learn More <i className="fa-regular fa-arrow-up-right"></i></a>
+        < Buttons type="yellow" title="Learn more" url="/learnmore"/>
 
     </div>
 

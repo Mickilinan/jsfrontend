@@ -1,6 +1,7 @@
 import React from 'react'
 import img_daria from '../../assets/images/daria.png'
 import img_bglinesleft from '../../assets/images/bglinesleft.svg'
+import Buttons from '../Generics/Buttons'
 
 const AboutCompany = () => {
   return (
@@ -43,7 +44,7 @@ const AboutCompany = () => {
                     voluptate amet.</p>
 
                 <div className="buttons">
-                    <a className="btn-black" href="learnmore.html">Learn More<i className="fa-regular fa-arrow-up-right"></i></a>
+                    < Buttons type="black" title="Learn More" url="/learnmore" />
                     <div>
                         <a className="introvideo" href="introvideo.html"><i className="fa-regular fa-circle-play"></i> Intro Video </a>
                     </div>

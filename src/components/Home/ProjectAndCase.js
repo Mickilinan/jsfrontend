@@ -3,6 +3,7 @@ import img_art1 from '../../assets/images/article-Image-1.png'
 import img_art2 from '../../assets/images/article-Image-2.png'
 import img_art3 from '../../assets/images/article-Image-3.png'
 import img_art4 from '../../assets/images/article-Image-4.png'
+import Buttons from '../Generics/Buttons'
 
 const ProjectAndCase = () => {
   return (
@@ -37,8 +38,7 @@ const ProjectAndCase = () => {
             </a>
         </div>
         <div class="center-content">
-            <a class="btn-black" href="projects.html">All Recent Projects <i
-                    class="fa-regular fa-arrow-up-right"></i></a>
+            < Buttons type="black" title="All Recent Projects" url="/projects"/>
         </div>
     </div>
 </section>
