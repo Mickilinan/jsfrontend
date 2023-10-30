@@ -1,6 +1,5 @@
 import React from 'react'
 import img_bglinesright from '../../assets/images/bglinesright.svg'
-import img_line2 from '../../assets/images/Line 2.svg'
 import ServiceBox from '../Generics/ServiceBox'
 import SectionTitle from '../Generics/SectionTitle'
 import Buttons from '../Generics/Buttons'
