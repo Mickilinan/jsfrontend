@@ -1,18 +1,18 @@
 import React from 'react'
 import img_logotype from '../../assets/images/logotype.svg'
 import Buttons from '../Generics/Buttons'
-
+import { NavLink, Link } from 'react-router-dom'
 
 const home = () => {
   return (
-    <div className="wrapper-grid">
+    <div>
     <header>
         <div className="container">
             <button className="btn-menubars"><i className="fa-solid fa-bars-staggered"></i></button>
             <div className="logotype">
-                <a href="index.html">
+                <Link to="/">
                     <img src={img_logotype} alt="crito logotype" />
-                </a>
+                </Link>
             </div>
             <div className="contactinformation-bar">
                 <div className="content-box">
@@ -37,10 +37,10 @@ const home = () => {
             </div>
             <div className="menu">
                 <nav>
-                    <a className="active" href="index.html">Home</a>
-                    <a href="services.html">Service</a>
-                    <a href="news.html">News</a>
-                    <a href="contacts.html">Contact</a>
+                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/services">Service</NavLink>
+                    <NavLink to="/news">News</NavLink>
+                    <NavLink to="/contact">Contact</NavLink>
                 </nav>
 
                 < Buttons type="yellow" title="Login" url="/login" />

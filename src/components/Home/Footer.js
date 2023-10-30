@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink, Link } from 'react-router-dom'
 import img_bglinesfooter from '../../assets/images/bglinesfooter.svg'
 import img_logfooter from '../../assets/images/Logofooter.svg'
 
@@ -15,8 +16,8 @@ const Footer = () => {
             <div className="grid-container">
 
                 <div>
-                    <a href="index.html">
-                        <img className="logotype" src={img_logfooter} alt="crito logotype" /></a>
+                    <Link to="/">
+                        <img className="logotype" src={img_logfooter} alt="crito logotype" /></Link>
                     <p>Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Placeat obcaecati voluptas
                         voluptates! Voluptates laborum nam

@@ -1,10 +1,10 @@
 import React from 'react'
-import Header from '../Home/Header'
-import LetsConnect from './LetsConnect'
-import ContactInfo from './ContactInfo'
-import LeaveAMessage from './LeaveAMessage'
-import Map from './Map'
-import Footer from '../Home/Footer'
+import Header from '../components/Home/Header'
+import LetsConnect from '../components/Contact/LetsConnect'
+import ContactInfo from '../components/Contact/ContactInfo'
+import LeaveAMessage from '../components/Contact/LeaveAMessage'
+import Map from '../components/Contact/Map'
+import Footer from '../components/Home/Footer'
 
 
 const Contact = () => {

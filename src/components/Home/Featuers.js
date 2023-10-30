@@ -23,17 +23,17 @@ const Featuers = () => {
             description="Lorem ipsum, dolor sit amet consectetur adipisicing elit."
              icon="fa-regular fa-handshake" />
 
-< FeaturesBox url="/businessadvice" 
+            < FeaturesBox url="/businessadvice" 
             title="Business Advice" 
             description="Lorem ipsum, dolor sit amet consectetur adipisicing elit."
              icon="fa-regular fa-lightbulb" />
 
-< FeaturesBox url="/businessadvice" 
+            < FeaturesBox url="/businessadvice" 
             title="Business Advice" 
             description="Lorem ipsum, dolor sit amet consectetur adipisicing elit."
              icon="fa-solid fa-chart-line" />
 
-< FeaturesBox url="/businessadvice" 
+            < FeaturesBox url="/businessadvice" 
             title="Business Advice" 
             description="Lorem ipsum, dolor sit amet consectetur adipisicing elit."
              icon="fa-solid fa-toolbox" />

@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {BrowserRouter, Router, Route, Routes} from 'react-router-dom';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import './assets/Style/App.css';
 
 import Home from './views/Home';
 import Contact from './views/Contact';
+import News from './views/News';
+import NewsDetails from './views/NewsDetails';
+import NotFound from './views/NotFound';
 
 
 
@@ -18,6 +21,9 @@ root.render(
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/contact' element={<Contact />} />
+      <Route path='/news' element={<News />} />
+      <Route path='/newsDetails' element={<NewsDetails />} />
+      <Route path='*' element={<NotFound />} />
     </Routes>
     </BrowserRouter>
  
