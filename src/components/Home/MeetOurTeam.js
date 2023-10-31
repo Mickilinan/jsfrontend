@@ -47,12 +47,12 @@ const MeetOurTeam = () => {
 
         </div>
 
-
+        <img src={img_dots} className="dots" />
 
     </div>
 
 
-    <img src={img_dots} className="dots" />
+    
 
 </section>
   )

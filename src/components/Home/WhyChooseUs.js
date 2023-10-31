@@ -16,14 +16,15 @@ const WhyChooseUs = () => {
         <WhyUsBox url="/planning" icon="fa-solid fa-list-check" title="Strategic Planning" description="Lorem, ipsum dolor sit amet consectetur."/>
         <WhyUsBox url="/design" icon="fa-light fa-pen-fancy" title="Experience Design" description="Lorem, ipsum dolor sit amet consectetur."/>
         <WhyUsBox url="/ai" icon="fa-solid fa-user-astronaut" title="Artificial Intelligence" description="Lorem, ipsum dolor sit amet consectetur."/>
-
-
-    </div>
+        </div>
+       
+    
 
     <div className="images">
         <img className="background" src={img_bg} alt="" />
         <img className="twowomen" src={img_chooseus} alt="two women in a meeting in an office" />
     </div>
+    
 
 </section>
   )

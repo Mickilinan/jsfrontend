@@ -436,6 +436,10 @@ header .container .menu .btn-login {
   display: flex;
   align-content: center;
 }
+.why-choose-us .container {
+  padding-left: 300px;
+  margin-top: 70px;
+}
 .why-choose-us .container .section-title {
   padding-bottom: 30px;
 }
@@ -569,8 +573,8 @@ header .container .menu .btn-login {
   width: 100%;
   height: auto;
 }
-.meet-our-team .dots {
-  margin-left: 1150px;
+.meet-our-team .container .dots {
+  margin-left: 550px;
   margin-top: 60px;
 }
 
@@ -621,7 +625,7 @@ header .container .menu .btn-login {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 10px;
-  margin-bottom: -70px;
+  margin-bottom: 70px;
 }
 .article-news .container .grid-container .section-title h2 {
   font-weight: 700;
@@ -654,8 +658,8 @@ header .container .menu .btn-login {
 .article-news .container .get-news .news p {
   padding-top: 20px;
 }
-.article-news .dots {
-  margin-left: 1150px;
+.article-news .container .dots {
+  margin-left: 550px;
   margin-bottom: 90px;
 }
 

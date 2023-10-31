@@ -46,9 +46,10 @@ const ArticleAndNews = () => {
             </a>
 
         </div>
+        <img src={img_dot2} className="dots" />
     </div>
 
-    <img src={img_dot2} className="dots" />
+    
 
 </section>
   )

@@ -8,6 +8,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
+    
 }
 
 .wrapper-grid {
@@ -902,7 +903,6 @@ header {
 
 
 }
-
 .why-choose-us {
     display: flex;
     align-content: center;
@@ -910,25 +910,9 @@ header {
 
     .container {
 
-        // padding-left: 550px;
-        // margin-top: -70px;
+        padding-left: 300px;
+        margin-top: 70px;
 
-        // @media (max-width: 768px) {
-        //     padding: 10px;
-        //     margin-top: 0;
-
-        //     h2 {
-        //         font-size: 30px;
-        //     }
-
-        //     h3 {
-        //         font-size: 20px;
-        //     }
-
-
-
-
-        // }
 
         .section-title {
             padding-bottom: 30px;
@@ -979,20 +963,13 @@ header {
         justify-content: flex-end;
         margin-top: 70px;
 
-        // @media (min-width: 768px) {
-        //     justify-content: center;
-
-
-        // }
+      
 
         .background {
             position: relative;
             margin-top: 180px;
             z-index: 0;
 
-            // @media (max-width:768px) {
-            //     display: none;
-            // }
 
         }
 
@@ -1001,14 +978,13 @@ header {
             right: 300px;
             z-index: 1;
 
-            // @media (max-width:768px) {
-            //     display: none;
-            // }
+           
 
         }
     }
 
 }
+
 
 .project-and-case {
     .container {
@@ -1117,9 +1093,6 @@ header {
 
 
 }
-
-
-
 
 .meet-our-team {
 
@@ -1236,20 +1209,26 @@ header {
 
 
         }
+        .dots {
+            
+            margin-left: 550px;
+            margin-top: 60px;
+    
+            // @media (max-width: 768px) {
+            //     display: none;
+            // }
+    
+        }
 
 
     }
 
-    .dots {
 
-        margin-left: 1150px;
-        margin-top: 60px;
+    //     // @media (max-width: 768px) {
+    //     //     display: none;
+    //     // }
 
-        // @media (max-width: 768px) {
-        //     display: none;
-        // }
-
-    }
+    // }
 }
 
 .testimonial {
@@ -1369,7 +1348,7 @@ header {
             display: grid;
             grid-template-columns: 2fr 1fr;
             gap: 10px;
-            margin-bottom: -70px;
+            margin-bottom: 70px;
 
             // @media (max-width: 768px) {
             //     display: flex;
@@ -1477,19 +1456,19 @@ header {
                 }
             }
         }
+        .dots {
 
+            margin-left: 550px;
+            margin-bottom: 90px;
+    
+            // @media (max-width: 768px) {
+            //     display: none;
+            // }
+        }
 
     }
 
-    .dots {
-
-        margin-left: 1150px;
-        margin-bottom: 90px;
-
-        // @media (max-width: 768px) {
-        //     display: none;
-        // }
-    }
+ 
 
 }
 

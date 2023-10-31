@@ -6,9 +6,10 @@ const WhyUsBox = ({title, description, url, icon}) => {
 
     <a className="choose-us" href={url}>
     <div className="ichoose"> <i className={icon}></i> </div>
-
+    <div>
         <h3>{title}</h3>
         <p>{description}</p>
+        </div>
     </a>
     
   )

@@ -13,7 +13,7 @@ const ProjectAndCase = () => {
 
        < SectionTitle title="Project & Case Studies" description="Let's Looks our Global Projects"/>
 
-        </div>
+        
 
         <div className="project-and-cases">
             <a className="project" href="#">
@@ -40,7 +40,7 @@ const ProjectAndCase = () => {
         <div className="center-content">
             < Buttons type="black" title="All Recent Projects" url="/projects"/>
         </div>
-    
+        </div>
 </section>
   )
 }
