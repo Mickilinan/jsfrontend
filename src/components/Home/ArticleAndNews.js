@@ -12,7 +12,7 @@ const ArticleAndNews = () => {
     <div className="container">
         <div className="grid-container">
            < SectionTitle title="Article & News" description="Get Every Single Articles & News" />
-            < Buttons type="" title="Browse Articles" url="/articles" />
+            < Buttons type="" title="Browse Articles" url="/news" />
             
         </div>
 
