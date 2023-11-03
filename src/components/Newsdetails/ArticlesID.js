@@ -10,7 +10,7 @@ const ArticlesID = () => {
   useEffect(() => {
     getArticle()
 
-  }, [])
+  }, [id])
 
 
   const getArticle = async () => {
@@ -18,8 +18,8 @@ const ArticlesID = () => {
     const response = await fetch (`https://win23-assignment.azurewebsites.net/api/articles/${id}`)
 
     if (response.status === 200) {
-    const articleData = await response.json()
-    setArticle(articleData[0])
+    const data = await response.json()
+    setArticle(data)
     }
     }
 
@@ -29,13 +29,21 @@ const ArticlesID = () => {
 
   return (
     <div>
+
+      {article.title ? (
+        <div>
     <h1>{article.title}</h1>
     <p>{article.content}</p>
     <p>Author: {article.author}</p>
     <p>Published: {article.published}</p>
     <p>Category: {article.category}</p>
     <img src={article.imageUrl} alt={article.title} />
-  </div>
+    </div>
+  
+      ) : (
+        <p>Loading...</p>
+      )}
+      </div>
 );
 };
   
