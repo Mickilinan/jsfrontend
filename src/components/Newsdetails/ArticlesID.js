@@ -6,6 +6,7 @@ const ArticlesID = () => {
   const [article, setArticle] = useState ({})
 
   const { id } = useParams ()
+  console.log("ID:", id)
 
   useEffect(() => {
     getArticle()
@@ -16,9 +17,11 @@ const ArticlesID = () => {
   const getArticle = async () => {
     if ( id !== undefined ) {
     const response = await fetch (`https://win23-assignment.azurewebsites.net/api/articles/${id}`)
+    console.log("API response:", response)
 
     if (response.status === 200) {
     const data = await response.json()
+    console.log("API Data:", data)
     setArticle(data)
     }
     }
