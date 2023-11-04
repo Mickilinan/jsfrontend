@@ -23,21 +23,28 @@ const BrowseArticles = () => {
 
 
   return (
-    <div>
-    <h1>Articles</h1>
+    <section className="browse-articles">
+      <div className="container">
+    <h2>Our News & Articles</h2>
     <ul>
       {articles.map((article) => (
         <li key={article.id}>
-          <Link to={`/articles/${article.id}`}>
+          <Link to={`/newsdetails/${article.id}`}>
             <div>
+            <div className="artikel-datum">{article.published}</div>
             <img src={article.imageUrl} alt={article.title} />
             
-            <h2>{article.title}</h2>
+            <p>{article.category}</p>
+            
+            <h4>{article.title}</h4>
+            <p>{article.content} </p>
+            <p>{article.author}</p>
             </div></Link>
         </li>
       ))}
     </ul>
-  </div>
+    </div>
+  </section>
 );
 };
 

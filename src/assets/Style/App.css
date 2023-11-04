@@ -834,6 +834,73 @@ header .container .menu .btn-login {
   height: auto;
 }
 
+.browse-articles .container h2 {
+  font-weight: 700;
+  padding-bottom: 20px;
+  margin-top: 70px;
+}
+.browse-articles .container p {
+  color: #191919;
+  padding-top: 10px;
+}
+.browse-articles .container ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+.browse-articles .container li {
+  position: relative;
+  text-align: left;
+}
+.browse-articles .container img {
+  width: 400px;
+  height: 300px;
+}
+.browse-articles .container h4 {
+  margin: 10px 0;
+  color: #191919;
+  font-weight: bold;
+}
+.browse-articles .container a {
+  text-decoration: none;
+}
+.browse-articles .container .artikel-datum {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #F9D783;
+  color: #191919;
+  font-weight: 700;
+  padding: 5px;
+  margin-top: 10px;
+  margin-left: 15px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.article .container h2 {
+  font-weight: 700;
+  padding-bottom: 20px;
+  margin-top: 70px;
+}
+.article .container p {
+  color: #191919;
+  padding-top: 10px;
+}
+.article .container img {
+  width: 400px;
+  height: 400px;
+}
+
 footer {
   background-color: #191919;
   padding-top: 35px;
