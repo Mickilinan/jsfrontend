@@ -867,6 +867,8 @@ header .container .menu .btn-login {
   text-decoration: none;
 }
 .browse-articles .container .artikel-datum {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   top: 0;
   left: 0;
@@ -882,23 +884,59 @@ header .container .menu .btn-login {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  font-size: 8px;
+  font-size: 14px;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: normal;
+}
+.browse-articles .container .artikel-datum .number {
+  font-weight: bold;
+}
+.browse-articles .container .artikel-datum .month {
+  font-weight: 300;
 }
 
+.article .container {
+  display: flex;
+  line-height: 1.8;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .article .container h2 {
   font-weight: 700;
   padding-bottom: 20px;
   margin-top: 70px;
 }
+.article .container .info-article {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 10px;
+}
 .article .container p {
+  font-size: 16px;
   color: #191919;
   padding-top: 10px;
+  font-weight: 400;
 }
-.article .container img {
-  width: 400px;
-  height: 400px;
+.article .container .article_img {
+  width: 700px;
+  height: 500px;
+}
+.article .container span {
+  font-size: 22px;
+  font-weight: bold;
+}
+.article .container .rightbox {
+  display: grid;
+  justify-content: right;
+  margin-left: 100px;
+}
+.article .container .rightbox .search {
+  margin-top: 300px;
+  padding-bottom: 20px;
+}
+.article .container .rightbox img {
+  padding-bottom: 10px;
 }
 
 footer {

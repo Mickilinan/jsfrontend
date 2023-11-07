@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="326" viewBox="0 0 420 326">
+  <g id="Categories" transform="translate(-1200 -1489)">
+    <g id="BG" transform="translate(1200 1489)" fill="#fff" stroke="rgba(25,25,25,0.2)" stroke-width="1">
+      <rect width="420" height="326" stroke="none"/>
+      <rect x="0.5" y="0.5" width="419" height="325" fill="none"/>
+    </g>
+    <text id="Recent_Posts" data-name="Recent Posts" transform="translate(1240 1533.16)" fill="#191919" font-size="22" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="24">Categories</tspan></text>
+    <text id="How_To_Blow_Through" data-name="How To Blow Through" transform="translate(1240 1589.48)" fill="rgba(25,25,25,0.6)" font-size="16" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="17" xml:space="preserve">Technology  -  </tspan><tspan y="17">20 Posts</tspan><tspan x="0" y="49" xml:space="preserve">Freelancing  -  </tspan><tspan y="49">07 Posts</tspan><tspan x="0" y="81" xml:space="preserve">Writing  -  </tspan><tspan y="81">16 Posts</tspan><tspan x="0" y="113" xml:space="preserve">Marketing  -  </tspan><tspan y="113">11 Posts</tspan><tspan x="0" y="145" xml:space="preserve">Business  -  </tspan><tspan y="145">35 Posts</tspan><tspan x="0" y="177" xml:space="preserve">Education  -  </tspan><tspan y="177">14 Posts</tspan></text>
+    <g id="Risk_Management" data-name="Risk Management">
+      <g id="Content">
+        <line id="Line_3" data-name="Line 3" x2="39" transform="translate(1241 1562)" fill="none" stroke="#191919" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -19,6 +19,31 @@ const BrowseArticles = () => {
        
     }
 
+    function getMonthName(monthNumber) {
+      const months = [
+        "Januari",
+        "Februari",
+        "Mars",
+        "April",
+        "Maj",
+        "Juni",
+        "Juli",
+        "Augusti",
+        "September",
+        "Oktober",
+        "November",
+        "December"
+      ];
+    
+      const monthIndex = monthNumber - 1;
+    
+      if (months[monthIndex]) {
+        return months[monthIndex];
+      } else {
+        return "Okänd månad";
+      }
+    }
+
 
 
 
@@ -31,7 +56,12 @@ const BrowseArticles = () => {
         <li key={article.id}>
           <Link to={`/newsdetails/${article.id}`}>
             <div>
-            <div className="artikel-datum">{article.published}</div>
+            <div className="artikel-datum">
+              <span className="number">
+           {Number(article.published.slice(8, 10))}</span>
+           {" "}
+                 <span className="month"> {getMonthName(Number(article.published.slice(5, 7)))} </span> 
+              </div>
             <img src={article.imageUrl} alt={article.title} />
             
             <p>{article.category}</p>

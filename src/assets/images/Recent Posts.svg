@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="554" viewBox="0 0 420 554">
+  <g id="Recent_Posts" data-name="Recent Posts" transform="translate(-1200 -895)">
+    <g id="BG" transform="translate(1200 895)" fill="#fff" stroke="rgba(25,25,25,0.2)" stroke-width="1">
+      <rect width="420" height="554" stroke="none"/>
+      <rect x="0.5" y="0.5" width="419" height="553" fill="none"/>
+    </g>
+    <text id="Recent_Posts-2" data-name="Recent Posts" transform="translate(1240 939.6)" fill="#191919" font-size="22" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="24">Recent Posts</tspan></text>
+    <g id="Post_01" data-name="Post 01">
+      <path id="Line_4" data-name="Line 4" d="M0,.5H339.188" transform="translate(1240 1085)" fill="none" stroke="rgba(25,25,25,0.1)" stroke-linecap="square" stroke-width="1" fill-rule="evenodd"/>
+      <g id="Txt">
+        <text id="How_To_Blow_Through" data-name="How To Blow Through" transform="translate(1240 992.48)" fill="#191919" font-size="16" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="17">How To Blow Through Capital At An </tspan><tspan x="0" y="43">Incredible Rate</tspan></text>
+        <text id="Jan_14_2020" data-name="Jan 14, 2020" transform="translate(1240 1050.68)" fill="rgba(25,25,25,0.7)" font-size="14" font-family="SegoeUI, Segoe UI" letter-spacing="-0.01em"><tspan x="0" y="15">Jan 14, 2020</tspan></text>
+      </g>
+    </g>
+    <g id="Post_02" data-name="Post 02">
+      <path id="Line_4_Copy" data-name="Line 4 Copy" d="M0,.5H339.188" transform="translate(1240 1197)" fill="none" stroke="rgba(25,25,25,0.1)" stroke-linecap="square" stroke-width="1" fill-rule="evenodd"/>
+      <g id="Txt-2" data-name="Txt">
+        <text id="Design_Studios_That" data-name="Design Studios That" transform="translate(1240 1104.48)" fill="#191919" font-size="16" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="17">Design Studios That Everyone Should </tspan><tspan x="0" y="43">Know About? </tspan></text>
+        <text id="Jan_14_2020_Copy" data-name="Jan 14, 2020 Copy" transform="translate(1240 1162.68)" fill="rgba(25,25,25,0.7)" font-size="14" font-family="SegoeUI, Segoe UI" letter-spacing="-0.01em"><tspan x="0" y="15">Jan 14, 2020</tspan></text>
+      </g>
+    </g>
+    <g id="Post_03" data-name="Post 03">
+      <path id="Line_4_Copy-2" data-name="Line 4 Copy" d="M0,.5H339.188" transform="translate(1240 1309)" fill="none" stroke="rgba(25,25,25,0.1)" stroke-linecap="square" stroke-width="1" fill-rule="evenodd"/>
+      <g id="Txt-3" data-name="Txt">
+        <text id="How_did_we_get_1M_v" data-name="How did we get 1M+ v" transform="translate(1240 1216.48)" fill="#191919" font-size="16" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="17">How did we get 1M+ visitors in 30 days </tspan><tspan x="0" y="43">without anything!</tspan></text>
+        <text id="Jan_14_2020_Copy-2" data-name="Jan 14, 2020 Copy" transform="translate(1240 1274.68)" fill="rgba(25,25,25,0.7)" font-size="14" font-family="SegoeUI, Segoe UI" letter-spacing="-0.01em"><tspan x="0" y="15">Jan 14, 2020</tspan></text>
+      </g>
+    </g>
+    <g id="Post_04" data-name="Post 04">
+      <text id="Figma_On_Figma:_How" data-name="Figma On Figma: How" transform="translate(1240 1328.48)" fill="#191919" font-size="16" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="17">Figma On Figma: How We Built Our </tspan><tspan x="0" y="43">Website Design System</tspan></text>
+      <text id="Jan_14_2020_Copy-3" data-name="Jan 14, 2020 Copy" transform="translate(1240 1386.68)" fill="rgba(25,25,25,0.7)" font-size="14" font-family="SegoeUI, Segoe UI" letter-spacing="-0.01em"><tspan x="0" y="15">Jan 14, 2020</tspan></text>
+    </g>
+    <g id="Risk_Management" data-name="Risk Management">
+      <g id="Content">
+        <line id="Line_3" data-name="Line 3" x2="39" transform="translate(1241 968)" fill="none" stroke="#191919" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>
