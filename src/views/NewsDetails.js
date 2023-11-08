@@ -13,8 +13,9 @@ const NewsDetails = () => {
       < TopSection />
      < ArticlesID />
 
-
+     <div className="newsdetails">
       < ArticleAndNews />
+      </div>
       < Footer />
 
     </div>

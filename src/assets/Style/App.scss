@@ -1741,6 +1741,7 @@ header {
         line-height: 1.8;
         padding-top: 30px;
         padding-bottom: 30px;
+
         h2 {
 
             font-weight: 700;
@@ -1750,9 +1751,8 @@ header {
 
         .info-article {
             display: grid;
-            grid-template-columns: 1fr 2fr 1fr;
-            gap: 10px;
-            
+            grid-template-columns: 1fr 1fr 1fr;
+                 
         }
 
         p {
@@ -1760,7 +1760,18 @@ header {
             color: #191919;
             padding-top: 10px;
             font-weight: 400;
+           
         }
+
+        .info-article p::before {
+            content: "•"; 
+            color:#F9D783;
+            margin-right: 10px; 
+            font-size: 35px;
+          }
+       
+           
+        
 
         .article_img{
             width: 700px;
@@ -1778,14 +1789,36 @@ header {
             justify-content: right;
             margin-left:100px;
 
-            .search {
-                margin-top: 300px;
-                padding-bottom: 20px;
-                
-            }
+            .search{
+                margin-top: 220px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                width: 430px;
+                height: 50px; 
+                border: none;
+                border-radius: 30px;
+                background-color:#7c7c7c1c;
+              }
+              
+              input[type="text"] {
+                width: 100%;
+                border: none;
+                outline: none;
+                box-sizing: border-box;
+                background-color: #7c7c7c00;
+              }
+              
+              i{
+                font-size: 20px; 
+                margin-left: 20px; 
+                color: #333; 
+                padding-right: 10px;
+              }
 
             img {
                 padding-bottom: 10px;
+                
                 
 
             }
@@ -1794,7 +1827,9 @@ header {
     }
 }
 
-
+.newsdetails {
+    background-color:#F0EFE9;
+}
 
 
 footer {
@@ -1936,4 +1971,24 @@ footer {
 
     }
 
+}
+
+.not-found {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #191919;
+
+
+    h1 {
+        color:#F94D1C;
+        font-size: 100px;
+    }
+
+    img {
+        width: 1200px;
+        height: auto;
+    }
 }

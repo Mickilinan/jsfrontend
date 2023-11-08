@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import img_recent from '../../assets/images/Recent Posts.svg'
 import img_categories from '../../assets/images/Categories.svg'
 
+
 const ArticlesID = () => {
 
   const [article, setArticle] = useState({})
@@ -30,6 +31,30 @@ const ArticlesID = () => {
       console.error('Ett fel inträffade:', error);
     }
   };
+  function getMonthName(monthNumber) {
+    const months = [
+      "Januari",
+      "Februari",
+      "Mars",
+      "April",
+      "Maj",
+      "Juni",
+      "Juli",
+      "Augusti",
+      "September",
+      "Oktober",
+      "November",
+      "December"
+    ];
+  
+    const monthIndex = monthNumber - 1;
+  
+    if (months[monthIndex]) {
+      return months[monthIndex];
+    } else {
+      return "Okänd månad";
+    }
+  }
 
   // const getArticle = async () => {
 
@@ -54,12 +79,12 @@ const ArticlesID = () => {
 
         <div>
 
-          <h1>{article.title}</h1>
+          <h2>{article.title}</h2>
 
           <div className="info-article">
-          <p>Author: {article.author}</p>
-          <p>Published: {article.published}</p>
-          <p>Category: {article.category}</p>
+          <p>{getMonthName(new Date(article.published).getMonth() + 1)}</p>
+          <p>{article.category}</p>
+          <p>{article.author}</p>
           </div>
           
           <img className="article_img" src={article.imageUrl} alt={article.title} />
@@ -87,7 +112,9 @@ const ArticlesID = () => {
 
         <div className="rightbox">
           <form className="search">
+            <i className="fa fa-search"></i>
             <input type="text" placeholder="Type to search..." />
+            
           </form>
           <img src={img_recent} />
           <img src={img_categories} />
