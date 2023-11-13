@@ -2,17 +2,17 @@ import React, { useState } from 'react';
 
 const LeaveAMessage = () => {
   // State för att hantera formulärdata och statusmeddelande
-  const [formData, setFormData] = useState({
+  const [form, setform] = useState({
     name: '',
     email: '',
     message: '',
   });
-  const [statusMessage, setStatusMessage] = useState('');
+  const [message, setmessage] = useState('');
 
   // Funktion för att uppdatera formulärdata när användaren ändrar inmatningsfälten
   const handleInputChange = (event) => {
     const { name, value } = event.target;
-    setFormData({ ...formData, [name]: value });
+    setform({ ...form, [name]: value });
   };
 
   // Funktion för att skicka formuläret till webapi
@@ -23,8 +23,8 @@ const LeaveAMessage = () => {
     // Validering med reguljära uttryck
     const nameRegex = /^[A-Za-z\s]+$/;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+/;
-    if (!nameRegex.test(formData.name) || !emailRegex.test(formData.email)) {
-      setStatusMessage('Please use valid info.');
+    if (!nameRegex.test(form.name) || !emailRegex.test(form.email)) {
+      setmessage('Please use valid info.');
       return;
     }
 
@@ -34,23 +34,23 @@ const LeaveAMessage = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(form),
       });
 
       if (response.status === 200) {
-        setStatusMessage('Thank you, your message will be read.');
-        setFormData({
+        setmessage('Thank you, your message will be read.');
+        setform({
           name: '',
           email: '',
           message: '',
         });
 
       } else {
-        setStatusMessage('Something went wrong.');
+        setmessage('Something went wrong.');
       }
     } catch (error) {
       console.error(error);
-      setStatusMessage('Something went wrong.');
+      setmessage('Something went wrong.');
     }
   };
 
@@ -63,7 +63,7 @@ const LeaveAMessage = () => {
             type="text"
             placeholder="Name*"
             name="name"
-            value={formData.name}
+            value={form.name}
             onChange={handleInputChange}
             required
           />
@@ -71,7 +71,7 @@ const LeaveAMessage = () => {
             type="text"
             placeholder="Email*"
             name="email"
-            value={formData.email}
+            value={form.email}
             onChange={handleInputChange}
             required
           />
@@ -80,7 +80,7 @@ const LeaveAMessage = () => {
             cols="50"
             placeholder="Your Message*"
             name="message"
-            value={formData.message}
+            value={form.message}
             onChange={handleInputChange}
             required
           ></textarea>
@@ -88,7 +88,7 @@ const LeaveAMessage = () => {
             Send message <i className="fa-solid fa-arrow-up-right"></i>
           </button>
         </form>
-        {statusMessage && <div>{statusMessage}</div>}
+        {message && <div>{message}</div>}
       </div>
     </section>
   );
@@ -122,13 +122,13 @@ export default LeaveAMessage;
 //         <form onSubmit={handleSubmit}>
 //             <input type="text" 
 //             placeholder="Name*" 
-//             value={formData.name}
+//             value={form.name}
 //             onChange={handleInputChange}
 //             required
 //             />
 //             <input type="text" 
 //             placeholder="Email*" 
-//             value={formData.email} 
+//             value={form.email} 
 //             onChange={handleInputChange}
 //             required
 //             />
@@ -136,7 +136,7 @@ export default LeaveAMessage;
 //             rows="4" 
 //             cols="50" 
 //             placeholder="Your Message*"  
-//             value={formData.message}
+//             value={form.message}
 //             onChange={handleInputChange}
 //             required
 

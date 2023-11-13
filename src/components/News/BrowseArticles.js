@@ -62,7 +62,7 @@ const BrowseArticles = () => {
            {" "}
                  <span className="month"> {getMonthName(Number(article.published.slice(5, 7)))} </span> 
               </div>
-            <img src={article.imageUrl} alt={article.title} />
+            <img className="article-image" src={article.imageUrl} alt={article.title} />
             
             <p>{article.category}</p>
             
