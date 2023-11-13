@@ -622,6 +622,21 @@ header .container .menu .btn-login {
   font-size: 14px;
 }
 
+.article-news {
+  overflow-x: auto;
+}
+.article-news .api-articles {
+  display: flex;
+  padding: 10px;
+}
+.article-news .api-articles .article {
+  margin-right: 10px;
+}
+.article-news .api-articles .article img {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+}
 .article-news .container .grid-container {
   display: grid;
   grid-template-columns: 2fr 1fr;

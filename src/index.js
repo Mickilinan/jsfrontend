@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import { ArtiklarProvider } from './components/ArticlesContext';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/Style/App.css';
 
@@ -15,6 +16,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   
   <React.StrictMode>
+    <ArtiklarProvider>
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<Home />} />
@@ -24,6 +26,7 @@ root.render(
       <Route path='*' element={<NotFound />} />
     </Routes>
     </BrowserRouter> 
+    </ArtiklarProvider>
   </React.StrictMode>
  
 );

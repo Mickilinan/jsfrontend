@@ -1,23 +1,32 @@
 import React, { useEffect, useState } from 'react'
 import {Link} from 'react-router-dom'
+import { useArtiklar } from '../ArticlesContext'
+
 
 const BrowseArticles = () => {
 
-    const [articles, setArticles] = useState ([])
+  const { articles } = useArtiklar();
 
-    useEffect (() => {
-        getArticles ()
-    } , [])
 
-    const getArticles = async () => {
-        const response = await fetch('https://win23-assignment.azurewebsites.net/api/articles')
 
-        if (response.status === 200) {
-            const data = await response.json()
-            setArticles(data)
-        }
+
+
+
+    // const [articles, setArticles] = useState ([])
+
+    // useEffect (() => {
+    //     getArticles ()
+    // } , [])
+
+    // const getArticles = async () => {
+    //     const response = await fetch('https://win23-assignment.azurewebsites.net/api/articles')
+
+    //     if (response.status === 200) {
+    //         const data = await response.json()
+    //         setArticles(data)
+    //     }
        
-    }
+    // }
 
     function getMonthName(monthNumber) {
       const months = [
