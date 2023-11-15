@@ -1,76 +1,25 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import MonthName from '../Generics/MonthName'
+import { useArtiklar } from '../ArticlesContext'
 import img_recent from '../../assets/images/Recent Posts.svg'
 import img_categories from '../../assets/images/Categories.svg'
 
 
 const ArticlesID = () => {
 
+  const { articles } = useArtiklar();
   const [article, setArticle] = useState({})
-
   const { id } = useParams()
   console.log("ID:", id)
 
 
   useEffect(() => {
-    getArticle()
+    const selectedArticle = articles.find((a) => a.id === id);
+    setArticle(selectedArticle  || {});
+}, [id, articles]);
 
-  }, [id])
-
-  const getArticle = async () => {
-    try {
-      const response = await fetch(`https://win23-assignment.azurewebsites.net/api/articles/${id}`);
-
-      if (response.status === 200) {
-        const data = await response.json();
-        setArticle(data);
-      } else {
-        console.error('Fel vid hämtning av artikel:', response.status);
-      }
-    } catch (error) {
-      console.error('Ett fel inträffade:', error);
-    }
-  };
-  function getMonthName(monthNumber) {
-    const months = [
-      "Januari",
-      "Februari",
-      "Mars",
-      "April",
-      "Maj",
-      "Juni",
-      "Juli",
-      "Augusti",
-      "September",
-      "Oktober",
-      "November",
-      "December"
-    ];
-  
-    const monthIndex = monthNumber - 1;
-  
-    if (months[monthIndex]) {
-      return months[monthIndex];
-    } else {
-      return "Okänd månad";
-    }
-  }
-
-  // const getArticle = async () => {
-
-  //   const response = await fetch(`https://win23-assignment.azurewebsites.net/api/articles/${id}`)
-
-
-  //   if (response.status === 200) {
-  //   const data = await response.json()
-  //   setArticle(data)
-  //   } 
-  // }
-
-
-
-
-
+ 
   return (
     <section className="article">
 
@@ -82,7 +31,7 @@ const ArticlesID = () => {
           <h2>{article.title}</h2>
 
           <div className="info-article">
-          <p>{getMonthName(new Date(article.published).getMonth() + 1)}</p>
+          <p><MonthName monthNumber={new Date(article.published).getMonth() +1} /> </p>
           <p>{article.category}</p>
           <p>{article.author}</p>
           </div>

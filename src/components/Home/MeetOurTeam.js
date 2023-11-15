@@ -6,6 +6,15 @@ import img_justin from '../../assets/images/justin.png'
 import img_dots from '../../assets/images/dot.svg'
 import Buttons from '../Generics/Buttons'
 import SectionTitle from '../Generics/SectionTitle'
+import Team from '../Generics/Team'
+
+
+const teamMembers = [
+    { id: 'kristine', imageUrl: img_kristine, name: 'Kristine Palmer', position: 'Chef Operation Officer' },
+    { id: 'markaubri', imageUrl: img_mark, name: 'Mark Aubri', position: 'Senior Consultant' },
+    { id: 'kimberly', imageUrl: img_kimberly, name: 'Kimberly Hansen', position: 'Senior Consultant' },
+    { id: 'justin', imageUrl: img_justin, name: 'Justin Willoman', position: 'Senior Tech Consultant' },
+  ];
 
 const MeetOurTeam = () => {
   return (
@@ -19,31 +28,12 @@ const MeetOurTeam = () => {
         </div>
 
         <div className="team-members">
+        
+      {teamMembers.map((member) => (
+        <Team key={member.id} {...member} />
+      ))}
 
-            <div id="kristine">
-                <img src={img_kristine} alt="smiling woman with short curly hair" />
-                <h3>Kristine Palmer</h3>
-                <p>Chef Operation Officer</p>
-
-            </div>
-            <div id="markaubri">
-                <img src={img_mark} alt="a man in a suit" />
-                <h3>Mark Aubri</h3>
-                <p>Senior Consultant</p>
-
-            </div>
-            <div id="kimberly">
-                <img src={img_kimberly}alt="smiling woman with dreads and a black dress" />
-                <h3>Kimberly Hansen</h3>
-                <p>Senior Consultant</p>
-
-            </div>
-            <div id="justin">
-                <img src={img_justin} alt="closeup picture of a smiling man" />
-                <h3>Justin Willoman</h3>
-                <p>Senior Tech Consultant</p>
-
-            </div>
+          
 
         </div>
 
@@ -52,7 +42,7 @@ const MeetOurTeam = () => {
     </div>
 
 
-    
+ 
 
 </section>
   )
