@@ -623,64 +623,57 @@ header .container .menu .btn-login {
   font-size: 14px;
 }
 
-.article-news {
-  overflow-x: auto;
-}
-.article-news a {
-  text-decoration: none;
-}
-.article-news p {
-  color: #191919;
-  padding-top: 10px;
-}
-.article-news .api-articles {
+.article-news .container {
   display: flex;
-  padding: 10px;
+  flex-direction: column;
 }
-.article-news .api-articles .article {
-  position: relative;
-  margin-right: 10px;
-  flex: 1;
+.article-news .container .section-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 0 30px;
 }
-.article-news .api-articles .article img {
-  width: 400px;
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
+.article-news .container .section-buttons-container .button-browse {
+  margin-top: 20px; /* Lägg till lite toppmarginal */
+  margin-left: auto;
 }
-.article-news .container .grid-container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 10px;
-  margin-bottom: 70px;
-}
-.article-news .container .grid-container .section-title {
-  padding-top: 70px;
-  padding-bottom: 30px;
-}
-.article-news .container .grid-container .section-title p {
+.article-news .container .section-buttons-container .section-title p {
   color: #F94D1C;
   margin-bottom: 10px;
 }
-.article-news .container .grid-container .section-title h2 {
+.article-news .container .section-buttons-container .section-title h2 {
   color: #191919;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 45px;
 }
-.article-news .container .grid-container .btn-transparent {
-  justify-self: end;
-  align-self: end;
-  align-self: center;
-  margin-top: 50px;
-  position: sticky;
+.article-news .container .grid-container {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 70px;
 }
-.article-news .container .grid-container h4 {
+.article-news .container .grid-container .api-articles {
+  display: flex;
+  padding: 50px;
+  overflow-x: auto;
+}
+.article-news .container .grid-container .api-articles .article {
+  position: relative;
+  margin-right: 10px;
+  flex: 1;
+}
+.article-news .container .grid-container .api-articles .article img {
+  width: 400px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.article-news .container .grid-container .api-articles h4 {
   margin: 10px 0;
   color: #191919;
   font-weight: bold;
 }
-.article-news .container .grid-container .artikel-datum {
+.article-news .container .grid-container .api-articles .artikel-datum {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -694,7 +687,6 @@ header .container .menu .btn-login {
   margin-left: 15px;
   width: 60px;
   height: 60px;
-  display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
@@ -703,11 +695,18 @@ header .container .menu .btn-login {
   text-overflow: ellipsis;
   white-space: normal;
 }
-.article-news .container .grid-container .artikel-datum .number {
+.article-news .container .grid-container .api-articles .artikel-datum .number {
   font-weight: bold;
 }
-.article-news .container .grid-container .artikel-datum .month {
+.article-news .container .grid-container .api-articles .artikel-datum .month {
   font-weight: 300;
+}
+.article-news .container a {
+  text-decoration: none;
+}
+.article-news .container p {
+  color: #191919;
+  padding-top: 10px;
 }
 
 .newsletter {
@@ -961,8 +960,14 @@ header .container .menu .btn-login {
   margin-top: 70px;
 }
 .article .container .info-article {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+}
+.article .container .info-article span {
+  font-weight: 200;
+}
+.article .container .info-article p {
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .article .container p {
   font-size: 16px;
@@ -974,6 +979,7 @@ header .container .menu .btn-login {
   content: "•";
   color: #F9D783;
   margin-right: 10px;
+  margin-left: 10px;
   font-size: 35px;
 }
 .article .container .article_img {

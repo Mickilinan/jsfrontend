@@ -1024,140 +1024,110 @@ header {
 }
 
 .article-news {
-    
-    overflow-x: auto;
-
-    a {
-        text-decoration: none;
-    }
-
-    p {
-
-        color: #191919;
-        padding-top: 10px;
-    }
-    
-    
-    .api-articles {
-        
-        // overflow: hidden; // Denna rad kan vara viktig för att klippa bort extra slides
+    .container {
+      display: flex;
+      flex-direction: column;
+  
+      .section-buttons-container {
         display: flex;
-        padding: 10px;
-        
-        
-    
-        .article {  
+        justify-content: space-between;
+        align-items: center;
+        padding: 70px 0 30px;
+
+        .button-browse {
+            
+    margin-top: 20px;       /* Lägg till lite toppmarginal */
+    margin-left: auto;
+        }
+  
+        .section-title {
+          p {
+            color: #F94D1C;
+            margin-bottom: 10px;
+          }
+  
+          h2 {
+            color: #191919;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 45px;
+          }
+        }
+
+      }
+  
+      .grid-container {
+        display: grid;
+        gap: 10px;
+        margin-bottom: 70px;
+  
+        .api-articles {
+          display: flex;
+          padding: 50px;
+          overflow-x: auto;
+  
+          .article {
             position: relative;
             margin-right: 10px;
-            flex: 1; 
-
-          img {
-            // overflow: auto;
-            width: 400px;
-            height: 300px;
-            object-fit: cover;
-          }
-          
-        }
-      }
-
-
-    .container {
-        .grid-container {
-
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 10px;
-            margin-bottom: 70px;
-            
-        
-                .section-title {
-                    padding-top: 70px;
-                    padding-bottom: 30px;
-                
-                    p {
-                        color: #F94D1C;
-                        margin-bottom: 10px;
-                    }
-                
-                    h2 {
-                        color: #191919;
-                        font-family: 'DM Sans', sans-serif;
-                        font-weight: 700;
-                        font-size: 45px;
-                    }
-                }
-            
-
-
-            .btn-transparent {
-
-                justify-self: end;
-                align-self: end;
-                align-self: center;
-                margin-top: 50px;
-                position: sticky;
-                
-
+            flex: 1;
+  
+            img {
+              width: 400px;
+              height: 300px;
+              object-fit: cover;
             }
-
-         
-            
-        h4 {
+          }
+  
+          h4 {
             margin: 10px 0;
             color: #191919;
             font-weight: bold;
-        }
-
-
-            .artikel-datum {
-                display:flex;
-                flex-direction: column;
-                position: absolute; 
-                top: 0; 
-                left: 0;
-                background-color: #F9D783;
-                color:#191919;
-                font-weight: 700;
-                padding: 5px; 
-                margin-top: 10px;
-                margin-left: 15px;
-                width: 60px; 
-                height: 60px; 
-                display: flex; 
-                align-items: center; 
-                justify-content: center; 
-                border-radius: 4px; 
-                font-size: 14px; 
-                overflow: hidden; 
-                text-overflow: ellipsis; 
-                white-space:normal;
-                
-    
-                .number {
-                    font-weight: bold;
-                    
-                    
-                }
-    
-                .month {
-                    font-weight: 300;
-                    
-                    
-                }
-                
+          }
+  
+          .artikel-datum {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #F9D783;
+            color: #191919;
+            font-weight: 700;
+            padding: 5px;
+            margin-top: 10px;
+            margin-left: 15px;
+            width: 60px;
+            height: 60px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            font-size: 14px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: normal;
+  
+            .number {
+              font-weight: bold;
             }
-
+  
+            .month {
+              font-weight: 300;
+            }
+          }
         }
-
-    
-
+      }
+  
+      a {
+        text-decoration: none;
+      }
+  
+      p {
+        color: #191919;
+        padding-top: 10px;
+      }
     }
-
-
-
-}
-
+  }
+  
 .newsletter {
     background-color: #F0EFE9;
     position: relative;
@@ -1521,8 +1491,18 @@ header {
         }
 
         .info-article {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            display: flex;
+
+            span {
+                font-weight: 200;
+                
+                
+            }
+
+            p {
+                font-size: 16px;
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+            }
                  
         }
 
@@ -1538,6 +1518,7 @@ header {
             content: "•"; 
             color:#F9D783;
             margin-right: 10px; 
+            margin-left: 10px;
             font-size: 35px;
           }
        

@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const ArticleAndNews = () => {
 
-  const { articles } = useArtiklar(5);
+  const { articles } = useArtiklar();
   console.log(articles);
 
  
@@ -16,9 +16,11 @@ const ArticleAndNews = () => {
   return (
     <section className="article-news">
       <div className="container">
+      <div className="section-buttons-container">
+      < SectionTitle title="Article & News" description="Get Every Single Articles & News" />
+          < Buttons className="button-browse" type="" title="Browse Articles" url="/news" />
+          </div>
         <div className="grid-container">
-          < SectionTitle title="Article & News" description="Get Every Single Articles & News" />
-          < Buttons type="" title="Browse Articles" url="/news" />
           <div className="api-articles">
             {articles.map((article) => (
               <div key={article.id} className="article">
