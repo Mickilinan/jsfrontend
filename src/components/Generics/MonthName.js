@@ -2,18 +2,18 @@ import React from 'react'
 
 function MonthName({ monthNumber}){
 const months = [
-    "Januari",
-    "Februari",
-    "Mars",
-    "April",
-    "Maj",
-    "Juni",
-    "Juli",
-    "Augusti",
-    "September",
-    "Oktober",
-    "November",
-    "December"
+    "Januari ",
+    "Februari ",
+    "Mars ",
+    "April ",
+    "Maj ",
+    "Juni ",
+    "Juli ",
+    "Augusti ",
+    "September ",
+    "Oktober ",
+    "November ",
+    "December "
 ];
 const monthIndex = monthNumber -1;
 

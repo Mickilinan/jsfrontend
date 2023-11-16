@@ -634,7 +634,7 @@ header .container .menu .btn-login {
   padding: 70px 0 30px;
 }
 .article-news .container .section-buttons-container .button-browse {
-  margin-top: 20px; /* Lägg till lite toppmarginal */
+  margin-top: 20px;
   margin-left: auto;
 }
 .article-news .container .section-buttons-container .section-title p {
@@ -956,24 +956,22 @@ header .container .menu .btn-login {
 }
 .article .container h2 {
   font-weight: 700;
-  padding-bottom: 20px;
+  font-size: 45px;
   margin-top: 70px;
 }
 .article .container .info-article {
   display: flex;
 }
-.article .container .info-article span {
-  font-weight: 200;
-}
 .article .container .info-article p {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  position: relative;
   font-size: 16px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.article .container p {
-  font-size: 16px;
-  color: #191919;
-  padding-top: 10px;
-  font-weight: 400;
+.article .container .info-article p span.number {
+  margin-right: 5px;
 }
 .article .container .info-article p::before {
   content: "•";
@@ -982,13 +980,22 @@ header .container .menu .btn-login {
   margin-left: 10px;
   font-size: 35px;
 }
+.article .container .info-article p:first-child::before {
+  content: none;
+}
 .article .container .article_img {
   width: 100%;
   height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.article .container span {
+.article .container p {
+  font-size: 16px;
+  color: #191919;
+  padding-top: 10px;
+  font-weight: 400;
+}
+.article .container .citat {
   font-size: 22px;
   font-weight: bold;
   padding: 50px;

@@ -5,19 +5,19 @@ const ArtiklarContext = createContext();
 
 export const ArtiklarProvider = ({ children }) => {
   const [articles, setArticles] = useState([]);
-  const defaultLimit = 3;
+  
 
   useEffect(() => {
-    getArticles(defaultLimit);
+    getArticles();
   }, []);
 
-  const getArticles = async (limit) => {
+  const getArticles = async () => {
     try {
       const response = await fetch('https://win23-assignment.azurewebsites.net/api/articles');
 
       if (response.status === 200) {
         const data = await response.json();
-        setArticles(data.slice(0, limit));
+        setArticles(data);
       }
     } catch (error) {
       console.error('Error fetching articles:', error);
