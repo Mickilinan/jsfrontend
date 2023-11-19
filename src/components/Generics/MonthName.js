@@ -18,7 +18,7 @@ const months = [
 const monthIndex = monthNumber -1;
 
 if (months[monthIndex]) {
-    return <span>{months[monthIndex]}</span>;
+    return <span> {months [monthIndex]} </span>;
 } else {
     return <span>Okänd månad</span>;
 }

@@ -10,23 +10,23 @@ import ProjectCard from '../Generics/ProjectCard'
 const ProjectAndCase = () => {
   return (
     <section className="project-and-case">
-    <div className="container">
+      <div className="container">
 
-       < SectionTitle title="Project & Case Studies" description="Let's Looks our Global Projects"/>
+        < SectionTitle title="Project & Case Studies" description="Let's Looks our Global Projects" />
 
-        
-       <div className="project-and-cases">
-      <ProjectCard imageUrl={img_art1} title="Grow your business" url="Read More" />
-      <ProjectCard imageUrl={img_art2} title="Why your client needs a responsive website" url="Read More" />
-      <ProjectCard imageUrl={img_art3} title="Educate your employees to get better results" url="Read More" />
-      <ProjectCard imageUrl={img_art4} title="Business Insights is an important piece of your business" url="Read More" />
-    </div>
-      
+
+        <div className="project-and-cases">
+          <ProjectCard imageUrl={img_art1} title="Grow your business" url="Read More" />
+          <ProjectCard imageUrl={img_art2} title="Why your client needs a responsive website" url="Read More" />
+          <ProjectCard imageUrl={img_art3} title="Educate your employees to get better results" url="Read More" />
+          <ProjectCard imageUrl={img_art4} title="Business Insights is an important piece of your business" url="Read More" />
+        </div>
+
         <div className="center-content">
-            < Buttons type="black" title="All Recent Projects" url="/projects"/>
+          < Buttons type="black" title="All Recent Projects" url="/projects" />
         </div>
-        </div>
-</section>
+      </div>
+    </section>
   )
 }
 

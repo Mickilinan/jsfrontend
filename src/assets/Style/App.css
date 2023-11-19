@@ -631,17 +631,13 @@ header .container .menu .btn-login {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 70px 0 30px;
+  padding: 50px 50px 30px;
 }
-.article-news .container .section-buttons-container .button-browse {
-  margin-top: 20px;
-  margin-left: auto;
-}
-.article-news .container .section-buttons-container .section-title p {
+.article-news .container .section-buttons-container p {
   color: #F94D1C;
   margin-bottom: 10px;
 }
-.article-news .container .section-buttons-container .section-title h2 {
+.article-news .container .section-buttons-container h2 {
   color: #191919;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;

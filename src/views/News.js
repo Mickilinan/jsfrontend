@@ -13,9 +13,6 @@ const News = () => {
       < Header />
       < TopSection />
       < BrowseArticles />
-
-
-
       < NewsLetter />
       < Footer />
     </div>

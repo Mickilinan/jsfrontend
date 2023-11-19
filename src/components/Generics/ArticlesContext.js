@@ -1,11 +1,10 @@
-
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const ArtiklarContext = createContext();
 
 export const ArtiklarProvider = ({ children }) => {
   const [articles, setArticles] = useState([]);
-  
+
 
   useEffect(() => {
     getArticles();

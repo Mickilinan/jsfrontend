@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import MonthName from '../Generics/MonthName'
-import { useArtiklar } from '../ArticlesContext'
+import { useArtiklar } from '../Generics/ArticlesContext'
 import img_recent from '../../assets/images/Recent Posts.svg'
 import img_categories from '../../assets/images/Categories.svg'
 
@@ -26,18 +26,18 @@ const ArticlesID = () => {
 
         <div>
 
-          <h2>{article.title}</h2>
+          <h2>{article.title}.</h2>
 
           <div className="info-article">
             <p>
               <span className="number">{new Date(article.published).getFullYear()}   </span> 
                 <span className="month">
                 <MonthName monthNumber={new Date(article.published).getMonth() + 1}  /> 
-                  </span>
-                 <span className="number">{new Date(article.published).getDate()} </span>
+                   </span>
+                 <span className="number">{new Date(article.published).getDate()}  </span>
             </p>
             <p>{article.category}</p>
-            <p>Skriven av: {article.author}</p>
+            <p>Skriven av : {article.author}</p>
           </div>
 
           <img className="article_img" src={article.imageUrl} alt={article.title} />

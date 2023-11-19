@@ -1,12 +1,18 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { useArtiklar } from '../ArticlesContext'
+import { useArtiklar } from '../Generics/ArticlesContext'
 import MonthName from '../Generics/MonthName';
 
 
 const BrowseArticles = () => {
 
   const { articles } = useArtiklar();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+
+
+  }, [])
 
 
   return (

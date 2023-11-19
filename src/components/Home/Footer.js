@@ -1,5 +1,5 @@
+import { Link } from 'react-router-dom'
 import React from 'react'
-import { NavLink, Link } from 'react-router-dom'
 import img_bglinesfooter from '../../assets/images/bglinesfooter.svg'
 import img_logfooter from '../../assets/images/Logofooter.svg'
 
