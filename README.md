@@ -1,3 +1,9 @@
+# Assignment JS Frontend
+
+The React Frontend for Crito project involved developing a multi-page React application using a provided design template. The project is structured into a basic and an advanced level, with the basic level focusing on navigation, component structure, and simple form validations. The advanced level expands on these requirements by incorporating regular expression validations, additional pages, reusable components, data fetching from a Web API, and the use of multiple React hooks. This project demonstrates proficiency in modern React development and best practices in building responsive, dynamic web applications.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
